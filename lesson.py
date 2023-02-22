@@ -44,3 +44,55 @@ s[2:5] = ['C', 'D', 'E']
 print(s)
 s[2:5] = [] # 特定の要素を空にする
 print(s)
+
+n.insert(0, 100) # 先頭に100を追加する
+print(n)
+n.pop(0) # 先頭を取り出す
+print(n)
+
+n = [1, 2, 3, 4, 5, 6, 6, 6]
+n.remove(6) # 先頭の6を削除
+print(n)
+n.remove(6)
+n.remove(6)
+print(n)
+# n.remove(6) # 消せるnがない
+
+a: list = [1, 2, 3, 4, 5, 6]
+b: list = [7, 8, 9, 10, 11, 12]
+x: list = a + b
+print(x)
+a += b # 追加する
+print(a)
+print(x)
+x = [1, 2, 3, 4, 5, 6]
+y = [7, 8, 9, 10, 11, 12]
+x.extend(y) # += と一緒
+print(x)
+
+r = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7, 8]
+print(r.index(3))
+print(r.index(3, r.index(3) + 1)) # 2番目の3の位置を返す
+
+print(r.count(3))
+
+if 15 in r:
+      print('exist')
+
+else:
+      print('not exist')
+
+r.sort()
+print(r)
+r.sort(reverse=True)
+print(r)
+r.reverse()
+print(r)
+
+s = 'My name is Mike. Hi Mike.'
+to_split: list = s.split(' ')
+print(to_split)
+print(to_split[0])
+
+x = ' '.join(to_split) # 結合
+print(x)
